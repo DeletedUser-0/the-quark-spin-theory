@@ -21,13 +21,13 @@ var quarks = {
         case: 1,
     },
     upgrade2: {
-        // first upgrade cost and level
+        // second upgrade cost and level
         cost: 25,
         level: 0,
         case: 1,
     },
     upgrade3: {
-        // first upgrade cost and level
+        // third upgrade cost and level
         cost: 40,
         level: 0,
         case: 1,
