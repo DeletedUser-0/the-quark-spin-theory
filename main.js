@@ -89,7 +89,7 @@ function Upgrade2() {
         if (Decimal.compare(quarks.red.have, quarks.upgrade2.cost) >= 0) {
             quarks.red.have = Decimal.sub(quarks.red.have, quarks.upgrade2.cost);
             quarks.upgrade2.cost = Decimal.times(quarks.upgrade2.cost, 2);
-            quarks.green.get = Decimal.times(quarks.green.get, 1.75);
+            quarks.green.get = Decimal.times(quarks.green.get, 1.5);
             quarks.upgrade2.level = Decimal.add(quarks.upgrade2.level, 1);
             quarks.upgrade2.case = Decimal.add(quarks.upgrade2.case, 1);
             document.getElementById('upgrade2').innerHTML = notate(quarks.upgrade2.cost) + " <b>green</b> quark spin <br> Level: " + notate(quarks.upgrade2.level);
@@ -99,7 +99,7 @@ function Upgrade2() {
         if (Decimal.compare(quarks.green.have, quarks.upgrade2.cost) >= 0) {
             quarks.green.have = Decimal.sub(quarks.green.have, quarks.upgrade2.cost);
             quarks.upgrade2.cost = Decimal.times(quarks.upgrade2.cost, 3);
-            quarks.green.get = Decimal.times(quarks.green.get, 2.4);
+            quarks.green.get = Decimal.times(quarks.green.get, 1.75);
             quarks.upgrade2.level = Decimal.add(quarks.upgrade2.level, 1);
             quarks.upgrade2.case = Decimal.add(quarks.upgrade2.case, 1);
             document.getElementById('upgrade2').innerHTML = notate(quarks.upgrade2.cost) + " <b>blue</b> quark spin <br> Level: " + notate(quarks.upgrade2.level);
@@ -109,7 +109,7 @@ function Upgrade2() {
         if (Decimal.compare(quarks.blue.have, quarks.upgrade2.cost) >= 0) {
             quarks.blue.have = Decimal.sub(quarks.blue.have, quarks.upgrade2.cost);
             quarks.upgrade2.cost = Decimal.times(quarks.upgrade2.cost, 1.5);
-            quarks.green.get = Decimal.times(quarks.green.get, 1.333333333333333333333333333333333333333333333333333333333333333333333);
+            quarks.green.get = Decimal.times(quarks.green.get, 1.2);
             quarks.upgrade2.level = Decimal.add(quarks.upgrade2.level, 1);
             quarks.upgrade2.case = new Decimal(1);
             document.getElementById('upgrade2').innerHTML = notate(quarks.upgrade2.cost) + " <b>red</b> quark spin <br> Level: " + notate(quarks.upgrade2.level);
@@ -122,7 +122,7 @@ function Upgrade3() {
         if (Decimal.compare(quarks.red.have, quarks.upgrade3.cost) >= 0) {
             quarks.red.have = Decimal.sub(quarks.red.have, quarks.upgrade3.cost);
             quarks.upgrade3.cost = Decimal.times(quarks.upgrade3.cost, 2);
-            quarks.blue.get = Decimal.times(quarks.blue.get, 1.75);
+            quarks.blue.get = Decimal.times(quarks.blue.get, 1.5);
             quarks.upgrade3.level = Decimal.add(quarks.upgrade3.level, 1);
             quarks.upgrade3.case = Decimal.add(quarks.upgrade3.case, 1);
             document.getElementById('upgrade3').innerHTML = notate(quarks.upgrade3.cost) + " <b>green</b> quark spin <br> Level: " + notate(quarks.upgrade3.level);
@@ -132,7 +132,7 @@ function Upgrade3() {
         if (Decimal.compare(quarks.green.have, quarks.upgrade3.cost) >= 0) {
             quarks.green.have = Decimal.sub(quarks.green.have, quarks.upgrade3.cost);
             quarks.upgrade3.cost = Decimal.times(quarks.upgrade3.cost, 3);
-            quarks.blue.get = Decimal.times(quarks.blue.get, 2.4);
+            quarks.blue.get = Decimal.times(quarks.blue.get, 1.75);
             quarks.upgrade3.level = Decimal.add(quarks.upgrade3.level, 1);
             quarks.upgrade3.case = Decimal.add(quarks.upgrade3.case, 1);
             document.getElementById('upgrade3').innerHTML = notate(quarks.upgrade3.cost) + " <b>blue</b> quark spin <br> Level: " + notate(quarks.upgrade3.level);
@@ -142,7 +142,7 @@ function Upgrade3() {
         if (Decimal.compare(quarks.blue.have, quarks.upgrade3.cost) >= 0) {
             quarks.blue.have = Decimal.sub(quarks.blue.have, quarks.upgrade3.cost);
             quarks.upgrade3.cost = Decimal.times(quarks.upgrade3.cost, 4);
-            quarks.blue.get = Decimal.times(quarks.blue.get, 2.8);
+            quarks.blue.get = Decimal.times(quarks.blue.get, 1.75);
             quarks.upgrade3.level = Decimal.add(quarks.upgrade3.level, 1);
             quarks.upgrade3.case = new Decimal(1);
             document.getElementById('upgrade3').innerHTML = notate(quarks.upgrade3.cost) + " <b>red</b> quark spin <br> Level: " + notate(quarks.upgrade3.level);
