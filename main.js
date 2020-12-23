@@ -165,6 +165,33 @@ function UpdateUI() {
     document.getElementById('RPC').innerHTML = notate(quarks.red.get);
     document.getElementById('GPC').innerHTML = notate(quarks.green.get);
     document.getElementById('BPC').innerHTML = notate(quarks.blue.get);
+    if (Decimal.compare(quarks.upgrade3.case, 3) == 0) {
+        document.getElementById('upgrade3').innerHTML = notate(quarks.upgrade3.cost) + " <b>green</b> quark spin <br> Level: " + notate(quarks.upgrade3.level);
+    };
+    if (Decimal.compare(quarks.upgrade3.case, 1) == 0) {
+        document.getElementById('upgrade3').innerHTML = notate(quarks.upgrade3.cost) + " <b>blue</b> quark spin <br> Level: " + notate(quarks.upgrade3.level);
+    };
+    if (Decimal.compare(quarks.upgrade3.case, 2) == 0) {
+        document.getElementById('upgrade3').innerHTML = notate(quarks.upgrade3.cost) + " <b>red</b> quark spin <br> Level: " + notate(quarks.upgrade3.level);
+    };
+    if (Decimal.compare(quarks.upgrade2.case, 1) == 0) {
+        document.getElementById('upgrade2').innerHTML = notate(quarks.upgrade2.cost) + " <b>red</b> quark spin <br> Level: " + notate(quarks.upgrade2.level);
+    };
+    if (Decimal.compare(quarks.upgrade2.case, 3) == 0) {
+        document.getElementById('upgrade2').innerHTML = notate(quarks.upgrade2.cost) + " <b>blue</b> quark spin <br> Level: " + notate(quarks.upgrade2.level);
+    };
+    if (Decimal.compare(quarks.upgrade2.case, 2) == 0) {
+        document.getElementById('upgrade2').innerHTML = notate(quarks.upgrade2.cost) + " <b>green</b> quark spin <br> Level: " + notate(quarks.upgrade2.level);
+    };
+    if (Decimal.compare(quarks.upgrade1.case, 1) == 0) {
+        document.getElementById('upgrade1').innerHTML = notate(quarks.upgrade1.cost) + " <b>red</b> quark spin <br> Level: " + notate(quarks.upgrade1.level);
+    };
+    if (Decimal.compare(quarks.upgrade1.case, 3) == 0) {
+        document.getElementById('upgrade1').innerHTML = notate(quarks.upgrade1.cost) + " <b>blue</b> quark spin <br> Level: " + notate(quarks.upgrade1.level);
+    };
+    if (Decimal.compare(quarks.upgrade1.case, 2) == 0) {
+        document.getElementById('upgrade1').innerHTML = notate(quarks.upgrade1.cost) + " <b>green</b> quark spin <br> Level: " + notate(quarks.upgrade1.level);
+    };
 }
 
 var mainGameLoop = window.setInterval(function () {
@@ -183,3 +210,14 @@ var mainGameLoop = window.setInterval(function () {
 var mainGameLoop = window.setInterval(function () {
     addRed()
 }, 1000);
+
+function saveGame() {
+    saveData = quarks;
+    localStorage.saveData = JSON.stringify(saveData);
+}
+
+function loadGame() {
+    var saveData = JSON.parse(localStorage.saveData || null) || {};
+    quarks = saveData;
+    return saveData.obj || "default";
+}
