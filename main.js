@@ -125,7 +125,6 @@ function Upgrade3() {
             quarks.blue.get = Decimal.times(quarks.blue.get, 1.43);
             quarks.upgrade3.level = Decimal.add(quarks.upgrade3.level, 1);
             quarks.upgrade3.case = Decimal.add(quarks.upgrade3.case, 1);
-            document.getElementById('upgrade3').innerHTML = notate(quarks.upgrade3.cost) + " <b>green</b> quark spin <br> Level: " + notate(quarks.upgrade3.level);
         };
     };
     if (Decimal.compare(quarks.upgrade3.case, 2) == 0) {
@@ -165,13 +164,13 @@ function UpdateUI() {
     document.getElementById('RPC').innerHTML = notate(quarks.red.get);
     document.getElementById('GPC').innerHTML = notate(quarks.green.get);
     document.getElementById('BPC').innerHTML = notate(quarks.blue.get);
-    if (Decimal.compare(quarks.upgrade3.case, 3) == 0) {
+    if (Decimal.compare(quarks.upgrade3.case, 2) == 0) {
         document.getElementById('upgrade3').innerHTML = notate(quarks.upgrade3.cost) + " <b>green</b> quark spin <br> Level: " + notate(quarks.upgrade3.level);
     };
-    if (Decimal.compare(quarks.upgrade3.case, 1) == 0) {
+    if (Decimal.compare(quarks.upgrade3.case, 3) == 0) {
         document.getElementById('upgrade3').innerHTML = notate(quarks.upgrade3.cost) + " <b>blue</b> quark spin <br> Level: " + notate(quarks.upgrade3.level);
     };
-    if (Decimal.compare(quarks.upgrade3.case, 2) == 0) {
+    if (Decimal.compare(quarks.upgrade3.case, 1) == 0) {
         document.getElementById('upgrade3').innerHTML = notate(quarks.upgrade3.cost) + " <b>red</b> quark spin <br> Level: " + notate(quarks.upgrade3.level);
     };
     if (Decimal.compare(quarks.upgrade2.case, 1) == 0) {
