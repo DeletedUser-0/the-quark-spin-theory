@@ -10,6 +10,12 @@
     text-align: center;
 }
 
+.title {
+    font-family: 'font';
+    font-size: 300%;
+    text-align: center;
+}
+
 .redQuarks {
     font-family: 'font';
     font-size: 150%;
@@ -179,25 +185,81 @@
     font-family: 'font';
     color: red;
     box-shadow: gray;
+    width: 25%;
+    text-align: center;
 }
 
 .buttonGreen {
     font-family: 'font';
     color: green;
     box-shadow: gray;
+    width: 25%;
+    text-align: center;
 }
 
 .buttonBlue {
     font-family: 'font';
     color: blue;
     box-shadow: gray;
+    width: 25%;
+    text-align: center;
 }
 
 .upgrade {
     font-family: 'font';
     font-size: 75%;
+    width: 25%;
 }
 
 .upgraded {
     font-family: 'font';
+}
+
+/* Set height of body and the document to 100% to enable "full page tabs" */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'font';
+    border-radius: 12px;
+}
+  
+  /* Style tab links */
+  .tablink {
+    font-family: 'font';
+    background-color: white;
+    color: black;;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 17px;
+    font-size: 17px;
+    width: 15%;
+    border-radius: 12px;
+}
+
+  /* Style tab links */
+  .tablink {
+    font-family: 'font';
+    background-color: white;
+    color: black;;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 17px;
+    font-size: 17px;
+    width: 15%;
+    border-radius: 12px;
+    margin: 0.5%;
+}
+
+  /* Style the tab content (and add height:100% for full page content) */
+  .tabcontent {
+    color: white;
+    display: none;
+}
+
+.line-height {
+    line-height: 10px;
+}
+
+.line-height2 {
+    line-height: 35px;
 }
