@@ -7,30 +7,34 @@
 </head>
 
 <body>
-    <p class="totalQuarks">You have <span id="redquarkspin" class="redQuarks">0</span> red quark spin, <span
-            id="greenquarkspin" class="greenQuarks">0</span> green quark spin and <span id="bluequarkspin"
-            class="blueQuarks">0</span> blue quark spin.</p>
+        <br class="line-height">
+    <p class="totalQuarks">You have <span id="redquarkspin" class="redQuarks">0</span> red quark spin, <span id="greenquarkspin" class="greenQuarks">0</span> green quark spin and <span id="bluequarkspin" class="blueQuarks">0</span> blue quark spin.</p>
+    <br class="line-height">
+    <button class="tablink" onclick="openPage('Game')">Game</button>
+    <button class="tablink" onclick="openPage('Points')">Points</button>
     <br>
-    <button onclick="addRed()" class="buttonRed">Click to get more red quark spin (+<span id="RPC">1</span>)</button>
-    <br>
-    <button onclick="addGreen()" class="buttonGreen">Click to get more green quark spin (+<span
-            id="GPC">1</span>)</button>
-    <br>
-    <button onclick="addBlue()" class="buttonBlue">Click to get more blue quark spin (+<span id="BPC">1</span>)</button>
-    <br>
-    <br>
-    <button onclick="Upgrade1()" class="upgrade">Get more red quark spin per click. <br> Cost: <span id="upgrade1"
-            class="upgraded">10 <b>red</b> quark spin <br> Level: 0</span></button>
-    <br>
-    <button onclick="Upgrade2()" class="upgrade">Get more green quark spin per click. <br> Cost: <span id="upgrade2"
-            class="upgraded">25 <b>red</b> quark spin <br> Level: 0</span></button>
-    <br>
-    <button onclick="Upgrade3()" class="upgrade">Get more blue quark spin per click. <br> Cost: <span id="upgrade3"
-            class="upgraded">40 <b>red</b> quark spin <br> Level: 0</span></button>
-    <br>
-    <br>
-    <button onclick="saveGame()" class="upgrade">Save game</button>
-    <button onclick="loadGame()" class="upgrade">Load game</button>
+    <br class="line-height2">
+    <div id="Game" class="tabcontent">
+        <button onclick="addRed()" class="buttonRed">Click to get more red quark spin (+<span id="RPC">1</span>)</button>
+        <br>
+        <button onclick="addGreen()" class="buttonGreen">Click to get more green quark spin (+<span id="GPC">1</span>)</button>
+        <br>
+        <button onclick="addBlue()" class="buttonBlue">Click to get more blue quark spin (+<span id="BPC">1</span>)</button>
+        <br>
+        <br>
+        <button onclick="Upgrade1()" class="upgrade">Get more red quark spin per click. <br> Cost: <span id="upgrade1" class="upgraded">10 <b>red</b> quark spin <br> Level: 0</span></button>
+        <br>
+        <button onclick="Upgrade2()" class="upgrade">Get more green quark spin per click. <br> Cost: <span id="upgrade2" class="upgraded">25 <b>red</b> quark spin <br> Level: 0</span></button>
+        <br>
+        <button onclick="Upgrade3()" class="upgrade">Get more blue quark spin per click. <br> Cost: <span id="upgrade3" class="upgraded">40 <b>red</b> quark spin <br> Level: 0</span></button>
+        <br>
+        <br>
+        <button onclick="saveGame()" class="upgraded">Save game</button>
+        <button onclick="loadGame()" class="upgraded">Load game</button>
+    </div>
+    <div id="Points" class="tabcontent">
+            <p>tada</p>
+    </div>
 </body>
 
 </html>
