@@ -9,7 +9,11 @@
   - buttons with the same size;
   - more colors;
   - three base upgrades that you can easily buy at the start;
-  - a prestige layer (points) {to be made soon}.
+  - a prestige layer.
+  
+  ## Next update:
+  * More upgrades (points);
+  * New prestige layer (infinity points) -- will be unlocked at 1.79e308 red, green and blue quark spin. 
  
   
  Click [here](https://deleteduser-0.github.io/the-quark-spin-theory/) to play!
