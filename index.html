@@ -10,8 +10,8 @@
         <br class="line-height">
     <p class="totalQuarks">You have <span id="redquarkspin" class="redQuarks">0</span> red quark spin, <span id="greenquarkspin" class="greenQuarks">0</span> green quark spin and <span id="bluequarkspin" class="blueQuarks">0</span> blue quark spin.</p>
     <br class="line-height">
-    <button class="tablink" onclick="openPage('Game')">Game</button>
-    <button class="tablink" onclick="openPage('Points')">Points</button>
+    <button class="tablink" onclick="openPage('Game')" style="font-family: font; font-size: 20px; display: inline-block;">Game</button>
+    <button class="tablink" onclick="openPage('Points')"  style="font-family: font; font-size: 20px; display: inline-block;">Points</button>
     <br>
     <br class="line-height2">
     <div id="Game" class="tabcontent">
@@ -33,7 +33,13 @@
         <button onclick="loadGame()" class="upgraded">Load game</button>
     </div>
     <div id="Points" class="tabcontent">
-            <p>tada</p>
+        <span id="points" class="upgraded2">You have 0 points.</span>
+        <br>
+        <br>
+        <button onclick="Prestige1()" id="incomingPoints" class="upgraded">Prestige to get 0 points.</button>
+        <br>
+        <br>
+        <button onclick="Upgrade4()" id="upgrade4" class="upgraded"></button>
     </div>
 </body>
 
