@@ -216,42 +216,34 @@
 }
 
 /* Set height of body and the document to 100% to enable "full page tabs" */
-body, html {
+body,
+html {
     height: 100%;
     margin: 0;
     font-family: 'font';
     border-radius: 12px;
 }
-  
-  /* Style tab links */
-  .tablink {
-    font-family: 'font';
-    background-color: white;
-    color: black;;
-    outline: none;
+
+/* Style tab links */
+.tablink {
+    background: #E0E0E0;
+    font-weight: bold;
+    border: 2px solid #4980CC;
+    border-radius: 4px;
+    transition-duration: 0.2s;
     cursor: pointer;
-    padding: 14px 17px;
-    font-size: 17px;
-    width: 15%;
-    border-radius: 12px;
 }
 
-  /* Style tab links */
-  .tablink {
-    font-family: 'font';
-    background-color: white;
-    color: black;;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 17px;
-    font-size: 17px;
-    width: 15%;
-    border-radius: 12px;
-    margin: 0.5%;
+.tablink:hover {
+    color: #FFFFFF;
+    background: #4980CC;
+    font-weight: bold;
+    border: 2px solid #4980CC;
+    border-radius: 4px;
 }
 
-  /* Style the tab content (and add height:100% for full page content) */
-  .tabcontent {
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
     color: white;
     display: none;
 }
@@ -262,4 +254,10 @@ body, html {
 
 .line-height2 {
     line-height: 35px;
+}
+
+.upgraded2 {
+    font-family: 'font';
+    font-size: 125%;
+    color: black;
 }
